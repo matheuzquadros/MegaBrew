@@ -38,10 +38,4 @@ public class ListagemPedidos {
 		}
 
 	}
-
-	public static void main(String[] args) {
-		Endpoint.publish("http://localhost:8181/pedidos", new ListagemPedidos());
-
-		System.out.println("Serviço Inicializado!");
-	}
 }

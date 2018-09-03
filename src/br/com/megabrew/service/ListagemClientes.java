@@ -23,12 +23,6 @@ public class ListagemClientes {
 		ClienteDao clienteDao = new ClienteDao();
 		clienteDao.adiciona(cliente);
 	}
-	
-	public static void main(String[] args) {
-		Endpoint.publish("http://localhost:8182/clientes", new ListagemClientes());
-		
-		System.out.println("Serviço Inicializado!");
-	}
 }
 
 
